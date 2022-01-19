@@ -6,21 +6,22 @@ package tech.strategio.helloworld;
         String lastName;
 //constructor
     Technologist() {
-       firstName = "";
+       firstName = "Ohz";
 }
     void setFirstName(String n) {
-        name = n;
+         String name = n;
     }
-    void getFirstName(String n) {
+    String getFirstName(String n) {
         return firstName;
     }
 }
 
 public class Test {
-    public static void main(String[] args){}
-//    Creating object DevOps of Tehcnologist
+	public static void main(String[] args) {
+//    Creating object DevOps of Technologist
 //    Print name of DevOps
     Technologist devOps = new Technologist();
-    System.out.println("DevOps Technologist First Name:" + devOps.getFirstName());
+    System.out.println("DevOps Technologist First Name: " +  devOps.getFirstName(""));
 
+	}
 }
