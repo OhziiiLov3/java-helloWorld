@@ -10,36 +10,43 @@ class Product {
 	int product_id;
 	String name;
 	int price;
+//	Constructor
 	Product(){
-		System.out.println(">>Product Object Constructed")
+		System.out.println(">>Product Object Constructed");
 	}
 //	Methods/Behaviors
 //	To write data in Product Object we have in the Method
-	void setProductDetails(int product_id, String name, int price){
-		this.product_id;
-		this.name;
-		this.price;
+	void setProductDetails(int product_id, String name, int price) {
+		this.product_id = product_id;
+		this.name = name;
+		this.price = price;
+	}
+		// Behavior details -> to read data from Product Object
+		void showProductDetails(){
+			System.out.println("---Product ID: "+product_id+"-----");
+			System.out.println("Name:\t"+name);
+			System.out.println("Price:\t"+price);
+			System.out.println("---------------");
+		}
+
 	}
 
-}
-// Behavior details -> to read data from Product Object
-	void showProductDetails(){
-	System.out.println("---Product ID: "+productID+"-----");
-	System.out.println("Name:\t"+name);
-	System.out.println("Price:\t"+price);
-	System.out.println("Price:\t"+price);
-}
+
 
 public class HelloWorldClass {
-// Main is executed by JVM when my program will run
+	// Main is executed by JVM when my program will run
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("Hello World");
+		System.out.println("Hello World");
 //		Create ab Object : Product
 		Product product = new Product();
 //		Product is not object it is a reference variable which holds the Hashcode of the obehct  in heixcal notation
-		System.out.println("product is: "+product);
+//		System.out.println("product is: "+product);
 //		Writing data in Object
 		product.setProductDetails(101,"Iphone",1000);
+//		readting data from object
+		product.showProductDetails();
 	}
+}
+
 
